@@ -1,0 +1,85 @@
+/* views/homeview.css */
+
+.homeview-container {
+    padding: 20px;
+  }
+  
+  .homeview-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .homeview-hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .homeview-hero p {
+    font-size: 1.25rem;
+  }
+  
+  .homeview-cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .homeview-featured {
+    margin-top: 30px;
+  }
+  
+  .homeview-featured h2 {
+    font-size: 2rem;
+  }
+  
+  .homeview-loading,
+  .homeview-error,
+  .homeview-empty {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .homeview-featured-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .homeview-featured-item {
+    flex: 1 1 calc(33.333% - 30px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .homeview-featured-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .homeview-featured-info {
+    padding: 10px;
+  }
+  
+  .homeview-featured-title {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .homeview-featured-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .homeview-gallery {
+    margin-top: 30px;
+  }
+  

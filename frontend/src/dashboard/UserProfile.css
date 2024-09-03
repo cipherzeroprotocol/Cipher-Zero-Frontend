@@ -1,0 +1,22 @@
+/* UserProfile.css */
+
+.user-profile {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile h2 {
+    margin-top: 0;
+  }
+  
+  .profile-info p {
+    margin: 10px 0;
+  }
+  
+  .profile-info strong {
+    display: inline-block;
+    width: 100px;
+  }
+  

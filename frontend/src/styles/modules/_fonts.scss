@@ -1,0 +1,40 @@
+
+// Font weights
+$weight-extra-light: 200;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semi: 600;
+$weight-bold: 700;
+ 
+// Base Font
+$font-title: 'Gilroy', 'Helvetica', sans-serif;
+$font-subtitle: 'Gilroy', 'Helvetica', sans-serif;
+$font-body: 'Gilroy', 'Helvetica', sans-serif;
+$line-height: 1.4;
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.otf') format('otf'),
+         url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: $weight-bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.otf') format('otf'),
+         url('../fonts/Gilroy-Semibold.woff') format('woff');
+    font-weight: $weight-semi;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.otf') format('otf'),
+         url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: $weight-regular;
+    font-style: normal;
+}

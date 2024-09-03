@@ -1,0 +1,21 @@
+.chart{
+    position: relative;
+    width: 50%;
+    margin: 10px 25%;
+    cursor: pointer;
+    &.line{
+        width: 90%;
+        height: 110px;
+        margin: 5px 5%;
+    }
+    @include breakpoint('phablet', max) {
+        &.doughnut {
+            width: 130% !important;
+            margin: 10px 0 0 -10% !important;
+        }
+        &.line {
+            width: 90% !important;
+            margin: 0;
+        }
+    }
+}

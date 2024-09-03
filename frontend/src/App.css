@@ -1,0 +1,46 @@
+/* App.css */
+
+/* Root container styling for the application */
+.App {
+  text-align: center;
+}
+
+/* Styling for the logo element */
+.App-logo {
+  height: 40vmin; /* 40% of the viewport height */
+  pointer-events: none; /* Disable pointer events on the logo */
+}
+
+/* Animation settings for the logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Rotate animation */
+  }
+}
+
+/* Header styling of the app */
+.App-header {
+  background-color: #282c34; /* Dark background color */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* Text color */
+}
+
+/* Styling for links */
+.App-link {
+  color: #61dafb; /* Light blue color for links */
+}
+
+/* Keyframes for the spinning animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start rotation at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}

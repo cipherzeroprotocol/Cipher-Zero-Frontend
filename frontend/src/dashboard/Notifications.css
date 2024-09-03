@@ -1,0 +1,27 @@
+/* Notifications.css */
+
+.notifications {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications h2 {
+    margin-top: 0;
+  }
+  
+  .notifications ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notifications li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .notifications li:last-child {
+    border-bottom: none;
+  }
+  

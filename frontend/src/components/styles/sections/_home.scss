@@ -1,0 +1,294 @@
+.content.home {
+  > :first-child {
+    margin-top: 25px;
+  }
+  .overview {
+    // margin-top: 5rem;
+    @include row($justify: space-between, $align: flex-start);
+
+    & > * {
+      @include column($align: center);
+      flex: 0 0 calc(50% - 2rem);
+      table {
+        table-layout: fixed;
+        tr .hash {
+          width: auto;
+        }
+      }
+      &:first-child {
+        margin-right: 2rem;
+      }
+      .btn {
+        margin: 1rem 0 0;
+      }
+      .block-table,
+      .transaction-table {
+        width: 100%;
+      }
+    }
+
+    .txn-table td.type:before {
+      width: 14px;
+      height: 14px;
+      top: 2px;
+    }
+    .more {
+      margin-top: 27px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      color: $color-theta-blue-light;
+    }
+  }
+
+  .dapps {
+    width: 100%;
+
+    &__title {
+      font-weight: $weight-bold;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 4px;
+      margin-top: 38px;
+      text-transform: uppercase;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      @include breakpoint("phablet", max) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: center;
+
+      .more {
+        margin-top: 27px;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1.4px;
+        color: $color-theta-blue-light;
+      }
+    }
+  }
+
+  @include breakpoint("tablet", max) {
+    > :first-child {
+      margin-top: 5%;
+    }
+    .overview {
+      margin-top: 0rem;
+      flex-flow: column;
+      & > *:first-child {
+        margin-right: 0rem;
+      }
+      .page-title {
+        margin-bottom: 1rem !important;
+      }
+    }
+  }
+
+  .chain-overview {
+    width: 100%;
+    margin-top: 40px;
+
+    &__title {
+      height: 55px;
+      line-height: 55px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 3.25px;
+    }
+
+    &__chains {
+    }
+
+    &__chain {
+      min-height: 60px;
+      line-height: 20px;
+      border: 1px solid rgba($color-font-light, 0.2);
+      color: $color-font-light;
+      font-size: 14px;
+      padding: 20px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        border-color: $color-font-light;
+        cursor: pointer;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &--logo {
+        height: 100%;
+        width: 80px;
+        margin-right: 110px;
+      }
+
+      &--description {
+        flex: 1;
+      }
+
+      @include breakpoint("phablet", max) {
+        min-height: 60px;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        &--logo {
+          margin-right: 10px;
+          height: 20px;
+          margin-bottom: 10px;
+          .playground {
+            margin-left: -25px;
+          }
+          .toonstar {
+            margin-left: -17px;
+          }
+        }
+        &--description {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.chain-logo {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  &.theta {
+    background-image: url("/images/logos/logo-theta-chain.png");
+    height: 20px;
+  }
+  &.replay {
+    background-image: url("/images/logos/logo-replay.png");
+    height: 20px;
+  }
+  &.passaways {
+    background-image: url("/images/logos/logo-passaways.png");
+    height: 30px;
+    width: 120px;
+    background-size: 100%;
+    margin: -5px 0;
+  }
+  &.playground {
+    background-image: url("/images/icons/icon-playground.png");
+    height: 24px;
+    width: 24px;
+    background-position: 0 50%;
+    &::after{
+      content: "PLAYGROUND";
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 550;
+      color: $color-white;
+      letter-spacing: 1px;
+      transform: translateY(2px);
+    }
+  }
+  &.toonstar {
+    background-image: url("/images/icons/icon-toonstar.jpeg");
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background-position: 0 50%;
+    &::after{
+      content: "SPACE JUNK";
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 550;
+      color: $color-white;
+      letter-spacing: 1px;
+      transform: translateY(2px);
+      white-space: nowrap;
+    }
+  }
+  &.lavita {
+    background-image: url("/images/icons/icon-lavita.png");
+    height: 24px;
+    width: 24px;
+    &::after{
+      content: "LAVITA";
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 550;
+      color: $color-white;
+      letter-spacing: 1px;
+      transform: translateY(2px);
+    }
+  }
+  &.pog {
+    background-image: url("/images/icons/icon-pog.png");
+    height: 24px;
+    width: 24px;
+    &::after{
+      content: "POGCHAIN";
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 550;
+      color: $color-white;
+      letter-spacing: 1px;
+      transform: translateY(2px);
+    }
+  }
+
+  &.grove {
+    background-image: url("/images/icons/icon-grove.png");
+    height: 24px;
+    width: 24px;
+    &::after{
+      content: "GROVE";
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 550;
+      color: $color-white;
+      letter-spacing: 1px;
+      transform: translateY(2px);
+    }
+  }
+
+  &.bullit {
+    background-image: url("/images/icons/icon-bullit.jpeg");
+    height: 24px;
+    width: 24px;
+    &::after{
+      content: "BULLIT";
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: 550;
+      color: $color-white;
+      letter-spacing: 1px;
+      transform: translateY(2px);
+    }
+  }
+}
+
+.content.check {
+  display: flex;
+  flex-direction: column;
+
+  &.search {
+    display: flex;
+    justify-content: space-around;
+  }
+}

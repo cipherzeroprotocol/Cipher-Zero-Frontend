@@ -1,0 +1,214 @@
+/* video.module.css */
+
+/* Main container for the Video component */
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styles for video name input field */
+.videoName {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styles for video description textarea */
+.videoDescription {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 100px;
+}
+
+/* Styles for drop zone */
+.dropZone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Styles for buttons in drop zone */
+.dropZone button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styles for resolution selector section */
+.resolutionSelector {
+    margin-bottom: 20px;
+}
+
+/* Styles for each resolution option */
+.resolutionOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Checkbox styles */
+.resolutionOption input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button for removing resolution */
+.resolutionOption button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+/* Styles for worker selector dropdown */
+.workerSelector {
+    margin-bottom: 20px;
+}
+
+/* Dropdown button styles */
+.dropdownButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Styles for dropdown options */
+.dropdownOption {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Styles for selected and active options */
+.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.active {
+    background-color: #e9ecef;
+}
+
+/* Styles for DRM collections section */
+.drmCollections {
+    margin-bottom: 20px;
+}
+
+/* Styles for each DRM collection item */
+.collectionItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styles for DRM collection input field */
+.collectionItem input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styles for DRM collection select dropdown */
+.collectionItem select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button for removing DRM collection */
+.collectionItem button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Button for adding DRM collection */
+.drmCollections button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styles for save button */
+.saveButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Styles for error messages */
+.error {
+    color: #dc3545;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Styles for transcoding section */
+.transcoding {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for transcoding progress */
+.transcoding p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Button for going back to new video setup */
+.transcoding button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
